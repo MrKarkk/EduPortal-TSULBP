@@ -1,0 +1,305 @@
+/* History University Component Styles */
+
+.history-university {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.history-university::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23198754" opacity="0.03"/><circle cx="75" cy="75" r="1" fill="%23198754" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #198754, #20c997);
+    border-radius: 2px;
+} */
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* History Text */
+.history-text, .achievements-text {
+    padding: 0 1rem;
+}
+
+.history-heading {
+    font-size: 1.8rem;
+    font-weight: 600;
+    color: #198754;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* .history-heading::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #198754, #20c997);
+    border-radius: 2px;
+} */
+
+.history-subheading {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #495057;
+    margin: 1.5rem 0 1rem 0;
+}
+
+.history-description {
+    font-size: 1.1rem;
+    line-height: 1.7;
+    color: #6c757d;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+}
+
+/* Image Containers */
+.history-image-container, .achievements-image-container {
+    position: relative;
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.history-image-container:hover, .achievements-image-container:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.history-image, .achievements-image {
+    width: 100%;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: transform 0.3s ease;
+}
+
+.history-image:hover, .achievements-image:hover {
+    transform: scale(1.05);
+}
+
+.image-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 350px;
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    color: #198754;
+    border-radius: 15px;
+    border: 2px dashed #198754;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.image-placeholder::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, transparent 30%, rgba(25, 135, 84, 0.05) 50%, transparent 70%);
+    animation: shimmer 2s infinite;
+}
+
+.image-placeholder:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(25, 135, 84, 0.15);
+    border-color: #20c997;
+}
+
+.image-placeholder svg {
+    opacity: 0.8;
+    margin-bottom: 1rem;
+    transition: all 0.3s ease;
+}
+
+.image-placeholder:hover svg {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.image-placeholder p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.image-placeholder:hover p {
+    opacity: 1;
+}
+
+@keyframes shimmer {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+/* Statistics Cards */
+.growth-stats h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #198754;
+    margin-bottom: 2rem;
+}
+
+.stat-card {
+    border: none;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.stat-icon {
+    color: #198754;
+    margin-bottom: 1rem;
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #198754;
+    margin: 0;
+    line-height: 1;
+}
+
+.stat-label {
+    font-size: 1rem;
+    color: #6c757d;
+    margin: 0.5rem 0 0 0;
+    font-weight: 500;
+}
+
+/* Conclusion Card */
+.conclusion-card {
+    border: none;
+    border-radius: 20px;
+    background: linear-gradient(135deg, #198754 0%, #20c997 100%);
+    color: white;
+    box-shadow: 0 15px 35px rgba(25, 135, 84, 0.3);
+    padding: 2rem;
+}
+
+.conclusion-icon {
+    color: white;
+    opacity: 0.9;
+}
+
+.conclusion-title {
+    font-size: 2rem;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.conclusion-text {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    opacity: 0.95;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .history-heading {
+        font-size: 1.5rem;
+    }
+    
+    .history-subheading {
+        font-size: 1.2rem;
+    }
+    
+    .history-description {
+        font-size: 1rem;
+    }
+    
+    .history-image, .achievements-image, .image-placeholder {
+        height: 250px;
+    }
+    
+    .stat-number {
+        font-size: 2rem;
+    }
+    
+    .conclusion-title {
+        font-size: 1.5rem;
+    }
+    
+    .conclusion-text {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .history-university {
+        padding: 3rem 0;
+    }
+    
+    .section-title {
+        font-size: 1.8rem;
+    }
+    
+    .history-text, .achievements-text {
+        padding: 0;
+    }
+    
+    .conclusion-card {
+        padding: 1.5rem;
+    }
+}

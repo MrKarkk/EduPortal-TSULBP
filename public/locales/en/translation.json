@@ -1,0 +1,236 @@
+{
+    "navigation": {
+        "home": "Home",
+        "news": "News",
+        "faculties": "Faculties",
+        "about": "About Us",
+        "blog": "Blog",
+        "contact": "Get in Touch"
+    },
+    "modal": {
+        "close": "Close"
+    },
+    "home": {
+        "title": "Tajik state university of law, business and politics",
+        "subtitle": "Apply to our Tajik state university of law, business and politics to the faculties of Law, Political Science and International Relations, Finance and Tax, Business and World Economy, Innovative Technologies and Accounting, Joint Faculty of TSUPBP-TFI",
+        "ourFaculties": "Our Faculties",
+        "contactUs": "Contact Us",
+        "whyChoose": "Why choose the Tajik state University of law, business and politics?",
+        "startCourses2025": "2025 start courses",
+        "startCoursesDesc": "At the Tajik state University of law, Business and Politics, classes in 2025 will begin in September!",
+        "learnMore": "Learn More"
+    },
+    "news": {
+        "title": "News",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eos distinctio ducimus! Modi quaerat dolores illo accusamus maxime cupiditate culpa minus animi repellat autem!",
+        "close": "Close"
+    },
+    "ourFaculties": {
+        "title": "Our Faculties",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eos distinctio ducimus! Modi quaerat dolores illo accusamus maxime cupiditate culpa minus animi repellat autem!."
+    },
+    "about": {
+        "title": "About Us",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam odio eos distinctio ducimus! Modi quaerat dolores illo accusamus maxime cupiditate culpa minus animi repellat autem!.",
+        "studyWithUs": "Study with Us",
+        "studyWithUsDesc1": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequatur, sunt saepe fugit dolores error mollitia doloribus optio, recusandae aperiam, nihil eius rem eum eaque sequi. Earum perspiciatis laudantium at quo sapiente perferendis distinctio, voluptatum obcaecati ipsa, eos nesciunt saepe adipisci placeat ducimus! Dignissimos quaerat fugiat consequuntur tempora fuga eveniet nobis!",
+        "studyWithUsDesc2": "Lorem ipsum, dolor sit amet consectetur adipisicing elit. Et quas ipsa assumenda eos veritatis nemo fuga dolore saepe eius, laborum earum magni id quae quidem tempore tempora consequuntur eveniet voluptatibus, suscipit atque, voluptatem blanditiis deleniti perferendis dolores. Architecto corporis sit suscipit labore modi sint facilis alias laboriosam facere et? Quo eum neque dolores iure, nam voluptates nesciunt quisquam modi maxime alias! Blanditiis vel dicta voluptates ab vero quia incidunt facilis ratione deserunt, inventore atque necessitatibus?",
+        "contactUs": "Contact Us",
+        "OurWinners": "Our Winners"
+    },
+    "questions": {
+        "title": "Frequently asked questions",
+        "subtitle": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat numquam rem expedita similique necessitatibus dolore magnam natus sit ipsa, quae neque accusantium placeat laudantium mollitia, reprehenderit alias incidunt, delectus obcaecati cupiditate sed omnis repudiandae eos! Quasi unde veritatis labore quibusdam."
+    },
+    "blog": {
+        "blog": "Blog",
+        "subtitle": "Stay informed about university life, research, and upcoming events at the Tajik State University of Law, Business and Politics.",
+        "latestBlog": "Latest Blog Posts",
+        "readMoreBlogs": "Read More Blogs",
+        "blogPost01": {
+            "title": "New Academic Year 2025 Begins at TSULBP",
+            "excerpt": "TSULBP officially opened the 2025 academic year with a welcoming ceremony for new students. The Rector encouraged them to strive for excellence and innovation."
+        },
+        "blogPost02": {
+            "title": "International Cooperation Expands with European Universities",
+            "excerpt": "TSULBP signed new partnership agreements with European universities to promote academic exchange and research collaboration."
+        },
+        "blogPost03": {
+            "title": "Scientific Conference on Business and Innovation",
+            "excerpt": "Students and professors presented their research on business development, innovation, and digital transformation in the economy."
+        },
+        "blogPost04": {
+            "title": "Student Volunteers Support Local Communities",
+            "excerpt": "TSULBP volunteers took part in a social campaign to help families in need, promoting solidarity and social responsibility."
+        },
+        "blogPost05": {
+            "title": "Career Fair 2025: Connecting Students with Employers",
+            "excerpt": "The annual Career Fair brought together leading companies and institutions to offer internships and jobs to TSULBP students."
+        },
+        "blogPost06": {
+            "title": "New Research Center for Law and Policy Studies",
+            "excerpt": "A new Research Center was launched to focus on legal reforms, governance, and modern political challenges."
+        },
+        "blogPost07": {
+            "title": "Sports Achievements of Our Students",
+            "excerpt": "TSULBP students won medals in national sports competitions in football, chess, and athletics."
+        },
+        "blogPost08": {
+            "title": "Guest Lecture by International Law Expert",
+            "excerpt": "An international law expert from Germany gave a lecture on global legal systems and youth in modern diplomacy."
+        },
+        "blogPost09": {
+            "title": "Innovation and Technology Week 2025",
+            "excerpt": "Students presented projects in IT, accounting automation, and AI solutions to support Tajikistan’s economy."
+        }
+    },
+    "footer": {
+        "address": "Main Address:",
+        "phone": "Phone Number:",
+        "email": "Email:",
+        "madeBy": "made by"
+    },
+    "faqAccordion": {
+        "title": "Frequently Asked Questions",
+        "subtitle": "Here you can find answers to the most common questions about admission, study programs, scholarships, and student life at the Tajik State University of Law, Business and Politics. If you still have questions, feel free to contact our admissions office — we are always ready to help you!",
+        "question01": "How can I apply to the university?",
+        "answer01": "You can apply online through our official website or visit the admissions office in person. Make sure to check the admission requirements before applying.",
+        "question02": "What faculties does the university have?",
+        "answer02": "The Tajik State University of Law, Business and Politics offers faculties such as Law, Political Science and International Relations, Finance and Tax, Business and World Economy, and Innovative Technologies and Accounting.",
+        "question03": "Does the university provide dormitory accommodation?",
+        "answer03": "Yes, the university offers dormitory housing for both local and international students with comfortable living conditions.",
+        "question04": "Are there scholarship opportunities available?",
+        "answer04": "Yes, students with excellent academic performance can apply for merit-based scholarships and other financial support programs."
+    },
+    "chooseSection": {
+        "title": "Why choose the Tajik State University of Law, Business and Politics?",
+        "academic": "High academic achievements",
+        "moreAcademic": "TSULBP is one of the leading universities in Tajikistan, known for its strong academic performance, innovative teaching methods and successful graduates who contribute to national development.",
+        "student": "Student-focused learning",
+        "moreStudent": "We care about every student — providing mentorship, modern facilities, and a dynamic environment that inspires learning and professional growth.",
+        "partnerships": "Partnerships and opportunities",
+        "morePartnerships": "We collaborate with leading universities and organizations worldwide, offering students opportunities for exchange programs, internships, and joint research projects."
+    },
+    "runningLine": {
+        "admission": "📝 Admission 2025 is now open!",
+        "newPrograms": "✨ New academic programs available",
+        "scholarships": "💰 Scholarships for excellent students",
+        "career": "🚀 100% career support after graduation",
+        "international": "🌐 International exchange programs",
+        "achievements": "🏆 Leading university in Central Asia",
+        "graduates": "👥 Join 15,000+ successful graduates",
+        "consultation": "💬 Free consultation available"
+    },
+    "faculties": {
+        "political": "Jurisprudence Political Science and international relations",
+        "finance": "Finance and Tax",
+        "business": "Business and global economics",
+        "innovative": "Innovative technologies and accounting",
+        "innovativeDesc": "Modern IT technologies and digital economy",
+        "joint": "Joint Faculty TGUPBP-TFI",
+        "viewAll": "View All Faculties"
+    },
+    "history": {
+        "title": "University History",
+        "subtitle": "30 years of development and achievements in Tajikistan's education",
+        "founded": "Foundation and Development",
+        "foundedText": "The university was founded in 1993 and over 30 years has become one of the leading universities in Tajikistan. Starting with 2 faculties and 300 students, today TSULBP encompasses 7 faculties and almost 8,000 students.",
+        "specializations": "Academic Programs",
+        "specializationsText": "The university trains specialists in law, business, economics, finance, politics, innovation and IT. Our graduates successfully work in government and private organizations, as well as international companies.",
+        "growth": "Our Achievements",
+        "infrastructure": "Modern Infrastructure",
+        "infrastructureText": "Over the years, new buildings, dormitories, laboratories, a Digital Learning Center, technopark, sports complex and other modern facilities have been built. The university is equipped with state-of-the-art equipment for quality education.",
+        "international": "International Cooperation",
+        "internationalText": "The university actively cooperates with foreign universities and international programs (Erasmus+, SCO, CSTO, EU). A joint faculty with Tashkent Financial University has been opened, where graduates receive diplomas from both countries.",
+        "today": "TSULBP Today",
+        "todayText": "Today TSULBP is a modern, recognized and internationally accredited university that plays an important role in training qualified personnel for Tajikistan and the region.",
+        "buildingAlt": "University building",
+        "campusAlt": "University campus",
+        "imageComingSoon": "Photo coming soon",
+        "stats": {
+            "years": "Years of History",
+            "students": "Students",
+            "professors": "Faculty with Academic Degrees",
+            "faculties": "Faculties"
+        }
+    },
+    "rector": {
+        "title": "University Rector",
+        "subtitle": "Leadership and vision for TSULBP development",
+        "name": "Muminzoda Sheroz Abdujabbor",
+        "position": "Rector of Tajik State University of Law, Business and Politics",
+        "birthInfo": "Born in 1982 in Bobojon Gafurov district",
+        "appointmentDate": "Appointed as Rector on May 28, 2025",
+        "photoComingSoon": "Rector's photo coming soon",
+        "achievementsTitle": "Achievements and Career",
+        "biography": "Biography",
+        "biographyText": "Graduated from the Tajik State University of Commerce with a degree in Law. He advanced from assistant professor to university rector, demonstrating outstanding results in scientific and pedagogical activities.",
+        "vision": "Development Vision",
+        "visionText": "Guided by the ideas of President Emomali Rahmon, he pays special attention to youth education and improving the quality of education. He actively develops international cooperation and implements innovative technologies in the educational process.",
+        "quote": "Our mission is to train highly qualified specialists capable of making a significant contribution to the development of Tajikistan and the region",
+        "achievements": {
+            "education": {
+                "title": "Education",
+                "description": "Graduate of TSUC with a degree in Jurisprudence"
+            },
+            "dissertation": {
+                "title": "Academic Degree",
+                "description": "Candidate of Sciences, dissertation on the legal regulation of futures contracts (2015)"
+            },
+            "career": {
+                "title": "Career Growth",
+                "description": "From assistant professor to university rector"
+            },
+            "awards": {
+                "title": "Awards",
+                "description": "Honorary titles and certificates for contributions to education and science development"
+            }
+        }
+    },
+    "proRector": {
+        "title": "Vice-Rectors of the University",
+        "subtitle": "Experienced leadership team ensuring quality education and innovation",
+        "proRector1": {
+            "name": "Fazliddinzoda Donish Fazliddin",
+            "position": "Vice-Rector for Academic Affairs, PhD in Philology, Associate Professor",
+            "birthInfo": "Born on October 24, 1987 in Asht district. Started his career in 2010 at the Institute of Economics and Trade, and since 2017 works at the Tajik State University of Law, Business and Politics, previously head of the testing center and dean of the Faculty of Political Science and International Relations.",
+            "appointmentDate": "Published 25 scientific articles, awarded the Certificate of Honor of the Ministry of Education (2020) and a Letter of Appreciation from the National Testing Center (2023)."
+        },
+        "proRector2": {
+            "name": "Khomidzoda Furkat Mukim",
+            "position": "Vice-Rector for Science and Innovation, Doctor of Historical Sciences, Professor",
+            "birthInfo": "Born on May 14, 1969 in Khujand. Taught history and social studies, dean of the Faculty of History and Political Science, since 2010 works at TSULBP as head of the department and dean.",
+            "appointmentDate": "Author of over 60 scientific publications, participated in the preparation of the university encyclopedia, awarded the honorary title 'Excellent Educator'."
+        },
+        "proRector3": {
+            "name": "Rizozoda Tura Rabbim",
+            "position": "Vice-Rector for International Relations, Doctor of Economics, Professor",
+            "birthInfo": "Born on March 5, 1972 in Firdavsi. Since 1994, lecturer and researcher, deputy rector for science and innovation, since 2024 – Vice-Rector for International Relations.",
+            "appointmentDate": "Author of over 250 scientific articles, 5 monographs, 12 textbooks, 17 teaching manuals, supervises doctoral and postgraduate students."
+        },
+        "proRector4": {
+            "name": "Normatova Shakhnosa Mannonovna",
+            "position": "Deputy Rector for Educational Work, PhD in Economics, Associate Professor",
+            "birthInfo": "Born on March 20, 1979 in Khujand. Taught management and marketing, head of the Department of Management, since 2022 – Deputy Rector for Educational Work.",
+            "appointmentDate": "Author of over 65 scientific articles, 3 monographs, awarded Certificates of Honor by the Ministry of Education and Science."
+        },
+        "proRector5": {
+            "name": "Amonov Amindjon Jamolovich",
+            "position": "Vice-Rector for Economic and Financial Affairs",
+            "birthInfo": "Born on April 17, 1977 in Shaydon. Lawyer, assistant professor, since 2024 – Vice-Rector for Economic and Financial Affairs.",
+            "appointmentDate": "Author of over 30 scientific publications on international private law, awarded the title 'Excellent Educator and Scientist'."
+        }
+    },
+    "academicCouncil": {
+        "title": "Academic Council of TSULBP",
+        "subtitle": "The main collegial governing body of the university",
+        "chairman": "Khoshimzoda Kh. Kh.",
+        "secretary": "Secretary: Marofieva S. Kh.",
+        "structure": "The council includes vice-rectors, deans, heads of departments, and representatives of public organizations.",
+        "phone": "Phone: ",
+        "council": "About the Council",
+        "descriptionCouncil": "The Academic Council operates on the basis of the Regulation on the Academic Council of Higher Education Institutions of the Republic of Tajikistan (approved by the decision of the Council of the Ministry of Education and Science dated May 26, 2006, No. 18/3). It is the main consultative and administrative body of the university.",
+        "activity": "Activities and Objectives",
+        "descriptionActivity": "The Council considers issues related to educational, scientific, upbringing, economic, and financial activities, approves work plans, and contributes to improving the educational process and developing the university’s scientific base. Meetings are held according to an approved plan each semester."
+    }
+}

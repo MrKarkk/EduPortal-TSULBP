@@ -1,0 +1,105 @@
+.faq-section p,
+.accordion {
+    width: 75%;
+}
+
+.accordion .accordion-button:focus,
+.accordion .accordion-button:not(.collapsed) {
+    box-shadow: none;
+}
+
+.accordion .accordion-button:not(.collapsed) {
+    background-color: #198754;
+    color: #ffffff;
+}
+
+.accordion .accordion-button:not(.collapsed)::after {
+    filter: invert();
+}
+
+/* Mobile and Tablet Responsive */
+@media only screen and (max-width: 991.98px) {
+    .faq-section p,
+    .accordion {
+        width: 100%;
+    }
+    
+    .accordion-button {
+        font-size: 1rem;
+        padding: 1rem 1.2rem;
+    }
+    
+    .accordion-body {
+        padding: 1rem 1.2rem;
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .faq-section p {
+        font-size: 1rem;
+        line-height: 1.5;
+        padding: 0 1rem;
+    }
+    
+    .accordion-button {
+        font-size: 0.95rem;
+        padding: 0.9rem 1rem;
+    }
+    
+    .accordion-body {
+        padding: 0.9rem 1rem;
+        font-size: 0.9rem;
+        line-height: 1.5;
+    }
+    
+    .accordion-item {
+        margin-bottom: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .faq-section p {
+        font-size: 0.9rem;
+        line-height: 1.4;
+        padding: 0 0.5rem;
+    }
+    
+    .accordion-button {
+        font-size: 0.9rem;
+        padding: 0.8rem 0.9rem;
+        text-align: left;
+    }
+    
+    .accordion-body {
+        padding: 0.8rem 0.9rem;
+        font-size: 0.85rem;
+        line-height: 1.4;
+    }
+    
+    .accordion-item {
+        margin-bottom: 0.6rem;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .faq-section p {
+        font-size: 0.85rem;
+        padding: 0 0.3rem;
+    }
+    
+    .accordion-button {
+        font-size: 0.85rem;
+        padding: 0.7rem 0.8rem;
+    }
+    
+    .accordion-body {
+        padding: 0.7rem 0.8rem;
+        font-size: 0.8rem;
+    }
+    
+    .accordion-item {
+        margin-bottom: 0.5rem;
+    }
+}

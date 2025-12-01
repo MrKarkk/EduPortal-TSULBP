@@ -1,0 +1,617 @@
+/* Navbar custom styles */
+
+/* Основные стили навбара */
+.navbar-custom {
+    background: transparent !important;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    padding: 1.5rem 0;
+    z-index: 1000;
+    margin-top: 1rem;
+}
+
+/* Стили при скролле */
+.navbar-custom.navbar-scrolled {
+    background: rgba(255, 255, 255, 0.8) !important;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+    padding: 0.8rem 0;
+    margin-top: 0;
+    border-bottom: 1px solid rgba(25, 135, 84, 0.1);
+}
+
+/* Анимация для brand */
+.navbar-custom .navbar-brand {
+    transition: all 0.3s ease;
+}
+
+.navbar-custom.navbar-scrolled .navbar-brand span {
+    color: #198754 !important;
+}
+
+/* Стили для nav-link при скролле */
+.navbar-custom.navbar-scrolled .nav-link {
+    color: #198754 !important;
+}
+
+.navbar-custom.navbar-scrolled .nav-link:hover {
+    color: #20c997 !important;
+}
+
+.navbar-custom.navbar-scrolled .nav-link.active {
+    color: #198754 !important;
+}
+
+.navbar-custom.navbar-scrolled .nav-link.active::after {
+    background-color: #198754;
+}
+
+/* Стили для dropdown при скролле */
+.navbar-custom.navbar-scrolled .faculties-dropdown .dropdown-toggle {
+    color: #198754 !important;
+}
+
+.navbar-custom.navbar-scrolled .faculties-dropdown .dropdown-toggle:hover {
+    color: #20c997 !important;
+}
+
+.navbar-custom.navbar-scrolled .faculties-dropdown .dropdown-toggle.active::after {
+    background-color: #198754;
+}
+
+/* Стили для переключателя языков при скролле */
+.navbar-custom.navbar-scrolled .language-switcher .dropdown-toggle {
+    color: #198754 !important;
+}
+
+.navbar-custom.navbar-scrolled .language-switcher .dropdown-toggle:hover {
+    color: #20c997 !important;
+}
+
+.navbar-custom.navbar-scrolled .language-switcher .dropdown-toggle:active,
+.navbar-custom.navbar-scrolled .language-switcher .dropdown-toggle.active,
+.navbar-custom.navbar-scrolled .language-switcher .dropdown-toggle.show,
+.navbar-custom.navbar-scrolled .language-switcher .dropdown-toggle:focus,
+.navbar-custom.navbar-scrolled .language-switcher .dropdown-toggle:focus-visible {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: #198754 !important;
+    box-shadow: none !important;
+}
+
+.navbar-custom.navbar-scrolled .language-switcher .dropdown-toggle::after {
+    border-top-color: #198754 !important;
+}
+
+/* Анимация появления navbar */
+@keyframes slideDown {
+    from {
+        transform: translateY(-100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.navbar-custom.navbar-scrolled {
+    animation: slideDown 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Улучшенная тень при скролле */
+.navbar-custom.navbar-scrolled::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    right: 0;
+    height: 10px;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.1), transparent);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.navbar-custom.navbar-scrolled:hover::after {
+    opacity: 1;
+}
+
+/* Кастомные стили для navbar toggler */
+.navbar-custom .custom-toggler {
+    border-color: #20c997;
+    border-radius: 8px;
+    padding: 6px 8px;
+    box-shadow: 0 0 0 3px rgba(25, 135, 84, 0.25);
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
+    background: rgba(25, 135, 84, 0.2);
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-custom .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(25, 135, 84, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 20px;
+    height: 20px;
+    transition: transform 0.3s ease;
+}
+
+/* Стили для toggle button при скролле */
+.navbar-custom.navbar-scrolled .custom-toggler {
+    border-color: #198754;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(15px);
+}
+
+.navbar-custom.navbar-scrolled .custom-toggler:hover {
+    background: rgba(25, 135, 84, 0.1);
+    border-color: #20c997;
+}
+
+.navbar-custom.navbar-scrolled .custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba(25, 135, 84, 1)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2.5' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar-custom .custom-toggler[aria-expanded="true"] {
+    background: rgba(25, 135, 84, 0.15);
+    border-color: #20c997;
+}
+
+/* Компенсация для фиксированного navbar */
+body {
+    padding-top: 0;
+    transition: padding-top 0.3s ease;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 991.98px) {
+    .navbar-custom {
+        padding: 0.8rem 0;
+        margin-top: 0.5rem;
+    }
+    
+    .navbar-custom.navbar-scrolled {
+        padding: 0.4rem 0;
+    }
+    
+    .navbar-custom.navbar-scrolled .navbar-collapse {
+        background: rgba(255, 255, 255, 0.98);
+        border-radius: 15px;
+        margin-top: 1rem;
+        padding: 1.5rem;
+        backdrop-filter: blur(25px);
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(25, 135, 84, 0.1);
+    }
+    
+    /* Адаптивные стили для toggler на мобильных */
+    .navbar-custom .custom-toggler {
+        padding: 10px 12px;
+        border-radius: 12px;
+        border-width: 2px;
+    }
+    
+    .navbar-custom .custom-toggler .navbar-toggler-icon {
+        width: 24px;
+        height: 24px;
+    }
+
+    /* Улучшенные стили для nav-link на планшетах */
+    .navbar .nav-link {
+        font-size: 16px !important;
+        padding: 12px 16px !important;
+        margin: 6px 0;
+        text-align: center;
+        border-radius: 10px;
+    }
+
+    .faculties-dropdown .dropdown-toggle {
+        font-size: 16px !important;
+        padding: 12px 16px !important;
+        text-align: center;
+    }
+
+    .faculties-dropdown .dropdown-menu {
+        margin-top: 8px;
+        padding: 12px;
+        border-radius: 12px;
+        min-width: 280px;
+    }
+
+    .navbar .dropdown-item {
+        padding: 12px 18px;
+        font-size: 15px;
+        border-radius: 8px;
+    }
+}
+
+/* Средние планшеты */
+@media (max-width: 768px) {
+    .navbar-custom {
+        padding: 0.6rem 0;
+        margin-top: 0.3rem;
+    }
+
+    .navbar-custom.navbar-scrolled {
+        padding: 0.3rem 0;
+    }
+
+    .navbar-custom .navbar-brand span {
+        font-size: 1.3rem;
+    }
+
+    .navbar-custom .custom-toggler {
+        padding: 8px 10px;
+        border-radius: 10px;
+    }
+    
+    .navbar-custom .custom-toggler .navbar-toggler-icon {
+        width: 22px;
+        height: 22px;
+    }
+
+    /* Оптимизированные стили для средних экранов */
+    .navbar .nav-link {
+        font-size: 15px !important;
+        padding: 10px 14px !important;
+        margin: 5px 0;
+    }
+
+    .faculties-dropdown .dropdown-toggle {
+        font-size: 15px !important;
+        padding: 10px 14px !important;
+    }
+
+    .faculties-dropdown .dropdown-menu {
+        min-width: 260px;
+        padding: 10px;
+    }
+
+    .navbar .dropdown-item {
+        padding: 10px 16px;
+        font-size: 14px;
+    }
+
+    .navbar-custom.navbar-scrolled .navbar-collapse {
+        padding: 1.2rem;
+        margin-top: 0.8rem;
+    }
+}
+
+/* Маленькие мобильные устройства */
+@media (max-width: 576px) {
+    .navbar-custom {
+        padding: 0.4rem 0;
+        margin-top: 0.2rem;
+    }
+    
+    .navbar-custom.navbar-scrolled {
+        padding: 0.2rem 0;
+    }
+
+    .navbar-custom .navbar-brand span {
+        font-size: 1.1rem;
+        margin-left: 0.3rem !important;
+        margin-right: 0.3rem !important;
+    }
+
+    .navbar-custom .custom-toggler {
+        padding: 6px 8px;
+        border-radius: 8px;
+    }
+    
+    .navbar-custom .custom-toggler .navbar-toggler-icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    /* Компактные стили для маленьких экранов */
+    .navbar .nav-link {
+        font-size: 14px !important;
+        padding: 8px 12px !important;
+        margin: 3px 0;
+    }
+
+    .faculties-dropdown .dropdown-toggle {
+        font-size: 14px !important;
+        padding: 8px 12px !important;
+    }
+
+    .faculties-dropdown .dropdown-menu {
+        min-width: 240px;
+        padding: 8px;
+        margin-top: 5px;
+    }
+
+    .navbar .dropdown-item {
+        padding: 8px 14px;
+        font-size: 13px;
+        margin: 1px 0;
+    }
+
+    .navbar-custom.navbar-scrolled .navbar-collapse {
+        padding: 1rem;
+        margin-top: 0.6rem;
+        border-radius: 12px;
+    }
+
+    /* Улучшенная анимация для маленьких экранов */
+    .scale-hover-effect:hover {
+        transform: scale(1.01);
+    }
+
+    /* Компактный dropdown */
+    .navbar .dropdown-menu {
+        min-width: 240px;
+        padding: 8px;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    .navbar-custom .navbar-brand span {
+        font-size: 1rem;
+    }
+
+    .navbar .nav-link {
+        font-size: 13px !important;
+        padding: 6px 10px !important;
+    }
+
+    .faculties-dropdown .dropdown-toggle {
+        font-size: 13px !important;
+        padding: 6px 10px !important;
+    }
+
+    .navbar .dropdown-item {
+        padding: 6px 12px;
+        font-size: 12px;
+    }
+
+    .faculties-dropdown .dropdown-menu {
+        min-width: 220px;
+        padding: 6px;
+    }
+
+    .navbar-custom.navbar-scrolled .navbar-collapse {
+        padding: 0.8rem;
+    }
+}
+.navbar .dropdown-menu {
+    border: none;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+    background-color: rgba(255, 255, 255, 0.95);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    min-width: 280px;
+    transition: all 0.3s ease;
+}
+
+/* Стили для активной ссылки */
+.navbar .nav-link {
+    position: relative;
+    color: #ffffff !important;
+    transition: all 0.3s ease;
+    padding-bottom: 8px;
+}
+
+.navbar .nav-link:hover {
+    color: #198754 !important;
+}
+
+.navbar .nav-link.active {
+    color: #ffffff !important;
+}
+
+.navbar .nav-link.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #198754;
+    border-radius: 2px;
+    animation: slideIn 0.3s ease;
+}
+
+@keyframes slideIn {
+    from {
+        width: 0;
+    }
+    to {
+        width: 30px;
+    }
+}
+
+/* Стили для активного dropdown */
+.navbar .dropdown-wrapper {
+    position: relative;
+}
+
+.navbar .dropdown-wrapper.active::after {
+    content: '';
+    position: absolute;
+    bottom: -8px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #198754;
+    border-radius: 2px;
+    animation: slideIn 0.3s ease;
+}
+
+.navbar .dropdown.active .dropdown-toggle {
+    color: #ffffff !important;
+}
+
+.navbar .dropdown.active .dropdown-toggle::after {
+    border-top-color: #198754;
+}
+
+.navbar .dropdown.active::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #198754;
+    border-radius: 2px;
+    animation: slideIn 0.3s ease;
+}
+
+.navbar .dropdown-item {
+    padding: 12px 20px;
+    transition: all 0.3s ease;
+    border-radius: 10px;
+}
+
+.navbar .dropdown-item:hover {
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+.navbar .dropdown-item:hover * {
+    color: white !important;
+}
+
+.navbar .dropdown-item:hover strong {
+    color: white !important;
+}
+
+.navbar .dropdown-item:hover small {
+    color: #e8f5e8 !important;
+}
+
+/* Специальное правило для "View All Faculties" */
+.navbar .dropdown-item.text-success:hover {
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+/* Переопределяем Bootstrap классы */
+.navbar .dropdown-menu .dropdown-item:hover,
+.navbar .dropdown-menu .dropdown-item:focus,
+.navbar .dropdown-menu .dropdown-item.active {
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+.navbar .dropdown-divider {
+    margin: 8px 15px;
+    border-color: #e9ecef;
+}
+
+.navbar .dropdown-toggle::after {
+    border-top: 0.4em solid;
+    border-right: 0.3em solid transparent;
+    border-left: 0.3em solid transparent;
+    margin-left: 0.5em;
+}
+
+.navbar .dropdown-toggle:hover {
+    color: #198754 !important;
+}
+
+/* Анимация появления dropdown */
+.navbar .dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    display: block !important;
+    visibility: hidden;
+}
+
+.navbar .dropdown:hover .dropdown-menu,
+.navbar .dropdown.show .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Стиль для активного dropdown toggle */
+.navbar .nav-link.dropdown-toggle {
+    color: #ffffff !important;
+    font-weight: 500;
+}
+
+.navbar .nav-link.dropdown-toggle:hover {
+    color: #198754 !important;
+}
+
+/* Специальные стили для faculties dropdown */
+.faculties-dropdown {
+    position: relative;
+}
+
+.faculties-dropdown .dropdown-toggle {
+    background: none !important;
+    border: none !important;
+    color: white !important;
+    text-decoration: none !important;
+    padding: 0.5rem 1rem !important;
+    position: relative;
+    transition: all 0.3s ease;
+    padding-bottom: 8px !important;
+    font-weight: 400 !important;
+    font-size: 1rem !important;
+}
+
+.faculties-dropdown .dropdown-toggle:hover {
+    color: #198754 !important;
+}
+
+.faculties-dropdown .dropdown-toggle:focus {
+    box-shadow: none !important;
+}
+
+.faculties-dropdown .dropdown-toggle::after {
+    display: none !important;
+}
+
+/* Активная ссылка для dropdown */
+.faculties-dropdown .dropdown-toggle.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 2px;
+    background-color: #198754;
+    border-radius: 1px;
+}
+
+/* Стили для иконки chevron */
+.faculties-dropdown .dropdown-toggle svg {
+    transition: transform 0.3s ease;
+}
+
+.faculties-dropdown.show .dropdown-toggle svg {
+    transform: rotate(180deg);
+}
+
+/* Анимация для dropdown menu */
+.faculties-dropdown .dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    display: block !important;
+    visibility: hidden;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+.faculties-dropdown:hover .dropdown-menu,
+.faculties-dropdown.show .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}

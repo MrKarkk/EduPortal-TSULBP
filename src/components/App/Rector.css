@@ -1,0 +1,286 @@
+/* Rector Component Styles */
+
+.rector-section {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    position: relative;
+    overflow: hidden;
+}
+
+.rector-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1" fill="%23198754" opacity="0.03"/><circle cx="75" cy="75" r="1" fill="%23198754" opacity="0.03"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+    pointer-events: none;
+}
+
+/* Section Title */
+.section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+/* .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 3px;
+    background: linear-gradient(90deg, #198754, #20c997);
+    border-radius: 2px;
+} */
+
+.section-subtitle {
+    font-size: 1.2rem;
+    color: #6c757d;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.6;
+}
+
+/* Rector Image */
+.rector-image-container {
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.rector-placeholder {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 400px;
+    background: linear-gradient(135deg, #198754 0%, #20c997 100%);
+    color: white;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+}
+
+.rector-placeholder:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 20px 40px rgba(25, 135, 84, 0.25);
+}
+
+.rector-placeholder svg {
+    opacity: 0.9;
+    margin-bottom: 1rem;
+}
+
+.rector-placeholder p {
+    margin-top: 1rem;
+    font-size: 1.1rem;
+    font-weight: 500;
+    opacity: 0.9;
+}
+
+/* Rector Info */
+.rector-info {
+    padding: 1rem;
+}
+
+.rector-name {
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #198754;
+    margin-bottom: 0.5rem;
+    line-height: 1.2;
+}
+
+.rector-position {
+    font-size: 1.3rem;
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 2rem;
+}
+
+.rector-details {
+    margin-top: 1.5rem;
+}
+
+.detail-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+    color: #495057;
+}
+
+.detail-icon {
+    color: #198754;
+    margin-right: 1rem;
+    width: 20px;
+}
+
+/* Achievement Cards */
+.achievements-section h3 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #198754;
+    margin-bottom: 2rem;
+}
+
+.achievement-card {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+    height: 100%;
+}
+
+.achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+}
+
+.achievement-icon {
+    color: #198754;
+    margin-bottom: 1rem;
+}
+
+.achievement-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #198754;
+    margin-bottom: 1rem;
+}
+
+.achievement-description {
+    font-size: 0.95rem;
+    color: #6c757d;
+    line-height: 1.5;
+}
+
+/* Bio and Vision Cards */
+.bio-card, .vision-card {
+    border: none;
+    border-radius: 15px;
+    background: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    transition: all 0.3s ease;
+}
+
+.bio-card:hover, .vision-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.12);
+}
+
+.bio-title, .vision-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #198754;
+    margin-bottom: 1.5rem;
+    position: relative;
+    padding-left: 20px;
+}
+
+.bio-title::before, .vision-title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #198754, #20c997);
+    border-radius: 2px;
+}
+
+.bio-text, .vision-text {
+    font-size: 1.05rem;
+    line-height: 1.7;
+    color: #6c757d;
+    text-align: justify;
+}
+
+/* Quote Card */
+.quote-card {
+    border: none;
+    border-radius: 30px;
+    background: linear-gradient(135deg, #19875467 0%, #20c9966e 100%);
+    color: white;
+    box-shadow: 0 15px 35px rgba(25, 135, 84, 0.3);
+    padding: 2rem;
+}
+
+.quote-icon {
+    color: white;
+    opacity: 0.9;
+    margin-bottom: 1.5rem;
+}
+
+.quote-text {
+    font-size: 1.4rem;
+    font-style: italic;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.quote-author {
+    font-size: 1.1rem;
+    font-weight: 600;
+    opacity: 0.9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .section-title {
+        font-size: 2rem;
+    }
+    
+    .section-subtitle {
+        font-size: 1rem;
+    }
+    
+    .rector-name {
+        font-size: 1.8rem;
+    }
+    
+    .rector-position {
+        font-size: 1.1rem;
+    }
+    
+    .rector-placeholder {
+        height: 300px;
+    }
+    
+    .achievement-title {
+        font-size: 1.1rem;
+    }
+    
+    .achievement-description {
+        font-size: 0.9rem;
+    }
+    
+    .quote-text {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .rector-section {
+        padding: 3rem 0;
+    }
+    
+    .rector-info {
+        padding: 0;
+    }
+    
+    .quote-card {
+        padding: 1.5rem;
+    }
+}

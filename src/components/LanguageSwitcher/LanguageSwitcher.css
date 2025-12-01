@@ -1,0 +1,280 @@
+/* Language Switcher Styles */
+
+/* Основные состояния кнопки:
+:active - при нажатии
+.active - активное состояние
+.show - когда dropdown открыт
+:focus и :focus-visible - при фокусе
+
+Переопределение Bootstrap переменных:
+--bs-btn-active-color: white !important
+--bs-btn-active-bg: transparent !important
+--bs-btn-active-border-color: transparent !important
+
+Специфичные селекторы:
+.navbar .language-switcher .btn.dropdown-toggle - высокая специфичность
+.language-switcher .btn-outline-light - для конкретного типа кнопки */
+
+.language-switcher {
+    position: relative;
+}
+
+.language-switcher .dropdown-toggle {
+    background: transparent;
+    border: none !important;
+    transition: all 0.3s ease;
+    color: white !important;
+}
+
+.language-switcher .dropdown-toggle:hover {
+    background: transparent;
+}
+
+.language-switcher .dropdown-toggle:focus {
+    background: transparent !important;
+    box-shadow: none !important;
+}
+
+.language-switcher .dropdown-toggle:active,
+.language-switcher .dropdown-toggle.active,
+.language-switcher .dropdown-toggle.show,
+.language-switcher .dropdown-toggle:focus-visible {
+    background: transparent !important;
+    border-color: transparent !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+.language-switcher .dropdown-toggle::after {
+    background: transparent;
+    margin-left: 8px;
+    border-top-color: white;
+}
+
+/* Dropdown Menu Styles */
+.language-switcher .dropdown-menu {
+    border-radius: 10px !important;
+    border: none !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15) !important;
+    padding: 8px;
+    margin-top: 5px;
+    min-width: 160px;
+}
+
+/* Dropdown Item Styles */
+.language-switcher .dropdown-item {
+    transition: all 0.3s ease;
+    border-radius: 6px;
+    margin: 2px 0;
+    padding: 10px 12px;
+    color: #333;
+    font-weight: 500;
+}
+
+.language-switcher .dropdown-item:hover {
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+.language-switcher .dropdown-item.active {
+    background-color: rgba(25, 135, 84, 0);
+    color: #198754;
+    font-weight: 600;
+}
+
+.language-switcher .dropdown-item.active:hover {
+    background-color: #198754 !important;
+    color: white !important;
+}
+
+/* Language Flag and Text */
+.language-flag {
+    font-size: 1.1em;
+    margin-right: 8px;
+    transition: color 0.3s ease;
+}
+
+.language-name {
+    font-size: 0.9rem;
+    transition: color 0.3s ease;
+}
+
+.language-check {
+    /* color: #198754; */
+    color: white;
+    font-weight: bold;
+    margin-left: auto;
+}
+
+/* Переопределение Bootstrap стилей для кнопки */
+.navbar .language-switcher .btn.dropdown-toggle:active,
+.navbar .language-switcher .btn.dropdown-toggle.active,
+.navbar .language-switcher .btn.dropdown-toggle.show,
+.navbar .language-switcher .btn.dropdown-toggle:focus,
+.navbar .language-switcher .btn.dropdown-toggle:focus-visible {
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: white !important;
+    box-shadow: none !important;
+}
+
+/* Более специфичное переопределение Bootstrap переменных */
+.language-switcher .btn-outline-light:active,
+.language-switcher .btn-outline-light.active,
+.language-switcher .btn-outline-light.show,
+.language-switcher .btn-outline-light:first-child:active,
+.language-switcher .btn-outline-light:not(.btn-check):active {
+    --bs-btn-active-color: white !important;
+    --bs-btn-active-bg: transparent !important;
+    --bs-btn-active-border-color: transparent !important;
+    background-color: transparent !important;
+    border-color: transparent !important;
+    color: white !important;
+}
+
+/* Mobile responsive */
+@media (max-width: 991.98px) {
+    .language-switcher {
+        margin-top: 15px;
+        text-align: center;
+    }
+    
+    .language-switcher .dropdown-toggle {
+        padding: 10px 16px;
+        font-size: 15px;
+        border-radius: 10px;
+        min-width: 120px;
+    }
+    
+    .language-switcher .dropdown-menu {
+        min-width: 160px;
+        left: 50% !important;
+        transform: translateX(-50%);
+    }
+    
+    .language-name {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .language-switcher {
+        margin-top: 12px;
+    }
+    
+    .language-switcher .dropdown-toggle {
+        padding: 8px 14px;
+        font-size: 14px;
+        border-radius: 8px;
+        min-width: 110px;
+    }
+    
+    .language-switcher .dropdown-menu {
+        min-width: 150px;
+        padding: 8px;
+    }
+    
+    .language-switcher .dropdown-item {
+        padding: 8px 10px;
+        font-size: 13px;
+    }
+    
+    .language-name {
+        font-size: 0.85rem;
+    }
+
+    .language-flag {
+        font-size: 1em;
+        margin-right: 6px;
+    }
+}
+
+@media (max-width: 576px) {
+    .language-switcher {
+        margin-top: 10px;
+    }
+    
+    .language-switcher .dropdown-toggle {
+        padding: 6px 12px;
+        font-size: 13px;
+        border-radius: 6px;
+        min-width: 100px;
+    }
+    
+    .language-switcher .dropdown-menu {
+        min-width: 140px;
+        padding: 6px;
+    }
+    
+    .language-switcher .dropdown-item {
+        padding: 6px 8px;
+        font-size: 12px;
+        border-radius: 4px;
+    }
+    
+    .language-name {
+        font-size: 0.8rem;
+    }
+
+    .language-flag {
+        font-size: 0.9em;
+        margin-right: 5px;
+    }
+}
+
+/* Очень маленькие экраны */
+@media (max-width: 480px) {
+    .language-switcher .dropdown-toggle {
+        padding: 5px 10px;
+        font-size: 12px;
+        min-width: 90px;
+    }
+    
+    .language-switcher .dropdown-menu {
+        min-width: 130px;
+        padding: 5px;
+    }
+    
+    .language-switcher .dropdown-item {
+        padding: 5px 7px;
+        font-size: 11px;
+    }
+    
+    .language-name {
+        font-size: 0.75rem;
+    }
+
+    .language-flag {
+        font-size: 0.8em;
+        margin-right: 4px;
+    }
+}
+
+/* Анимации для dropdown menu */
+.language-switcher .dropdown-menu {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.3s ease;
+    display: block !important;
+    visibility: hidden;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 5px;
+}
+
+.language-switcher:hover .dropdown-menu,
+.language-switcher.show .dropdown-menu {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* Анимация для иконки chevron */
+.language-switcher .dropdown-toggle::after {
+    transition: transform 0.3s ease;
+}
+
+.language-switcher.show .dropdown-toggle::after {
+    transform: rotate(180deg);
+}
