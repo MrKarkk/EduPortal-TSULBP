@@ -3,6 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://MrKarkk.github.io/EduPortal-TSULBP",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -40,6 +41,5 @@
     "globals": "^16.4.0",
     "sass": "^1.93.2",
     "vite": "^7.1.7"
-  },
-  "homepage": "https://mrkarkk.github.io/EduPortal-TSULBP/"
+  }
 }
